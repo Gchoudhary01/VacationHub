@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { AuthOptions } from "next-auth";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
@@ -28,6 +28,8 @@ export const authOptions: AuthOptions = {
       },
 
       async authorize(credentials) {
+        console.log("1. login attempt:", credentials?.email);
+        
         if (!credentials?.email || !credentials?.password) {
           throw new Error("Invalid credentials");
         }

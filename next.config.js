@@ -1,33 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
-        pathname: "**",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-        pathname: "**",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "avatars.githubusercontent.com",
-        pathname: "**",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "files.edgestore.dev",
-        pathname: "**",
-        port: ""
-      }
-    ],
-  },
+  remotePatterns: [
+    { protocol: "https", hostname: "loremflickr.com" },
+    { protocol: "https", hostname: "live.staticflickr.com" },
+    { protocol: "https", hostname: "farm66.staticflickr.com" },
+    { protocol: "https", hostname: "images.unsplash.com" },
+  ],
+},
 };
 
 module.exports = nextConfig;
