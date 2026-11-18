@@ -10,8 +10,8 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@edgestore/react": "^0.1.6",
-    "@edgestore/server": "^0.1.6",
+    "@edgestore/react": "^0.1.7",
+    "@edgestore/server": "^0.1.7",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@next/third-parties": "^15.2.1",
     "@prisma/client": "^5.8.0",
